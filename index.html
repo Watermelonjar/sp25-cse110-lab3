@@ -8,7 +8,7 @@
 <body>
 
   <header>
-    <h1>Pomodoro Timer First Brainstorm</h1>
+    <h1 class="ran">Pomodoro Timer First Brainstorm</h1>
     <h2>Meeting Topic: Brainstorming</h2>
     <h3>Date: April 13, 2025</h3>
   </header>
@@ -51,7 +51,7 @@
   </section>
 
   <section>
-    <h2>Comments / Questions / Concerns</h2>
+    <h2 id="comment">Comments / Questions / Concerns</h2>
     <ul>
       <li>Is 25 minutes the ideal Pomodoro length?</li>
       <li>Should we include analytics?</li>
@@ -60,7 +60,7 @@
   </section>
 
   <section>
-    <h2>Diagrams Presented</h2>
+    <h2 class="ran">Diagrams Presented</h2>
     <figure>
       <img src="./screenshots/Batmobile%20Design.jpg" alt="Batmobile Diagram">
       <figcaption>Initial system architecture draft</figcaption>
@@ -83,5 +83,35 @@
     </video>
   </section>
 
+  <section>
+    <h2>Section Title</h2>
+    <p>This is inside a section that has an h2 (for :has selector).</p>
+  </section>
+
+  <section>
+    <article>
+      <h3>Article Title</h3>
+      <p>Paragraph right after h3 (adjacent sibling selector).</p>
+      <p>Paragraph following h2 (general sibling selector).</p>
+    </article>
+    <div id="comment">This is an element with id="comment"</div>
+
+    <input type="text" placeholder="Text input (attribute selector)">
+
+    <button>Normal Button</button>
+    <button class="primary">Primary Button (element.class)</button>
+
+    <ul>
+      <li>Child item</li>
+      <li>Another child item</li>
+    </ul>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </section>
 </body>
 </html>
